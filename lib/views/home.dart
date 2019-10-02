@@ -26,6 +26,7 @@ class MyAppState extends State<MyApp> {
               child: Text("Acc"),
               onPressed: addCounter,
             ),
+            Image.asset('assets/images/billie_1.jpg'),
           ],
         ),
       ),
