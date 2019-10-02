@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'example_counter.dart';
 
 class Second extends StatelessWidget {
+  Second({@required this.dato}) : super();
+
+  String dato = "Hola vale!";
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -10,13 +14,18 @@ class Second extends StatelessWidget {
         )),
         body: Container(
           child: Center(
-            child: RaisedButton(
-              child: Icon(Icons.adjust),
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ExampleCounter()),
-              ),
-              splashColor: Colors.blueGrey,
+            child: Column(
+              children: <Widget>[
+                Text(dato),
+                RaisedButton(
+                  child: Icon(Icons.adjust),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ExampleCounter()),
+                  ),
+                  splashColor: Colors.blueGrey,
+                ),
+              ],
             ),
           ),
         ),
