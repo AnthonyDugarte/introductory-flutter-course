@@ -18,6 +18,8 @@ class ExampleCounterState extends State<ExampleCounter> {
       ),
       body: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Image.asset('assets/images/billie_1.jpg'),
             Container(

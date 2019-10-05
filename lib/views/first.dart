@@ -14,6 +14,8 @@ class First extends StatelessWidget {
         body: Container(
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 TextField(
                   enabled: true,
